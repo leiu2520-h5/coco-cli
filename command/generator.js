@@ -44,7 +44,7 @@ async function downLoadTemplate(repository, projectName, clone) {
 function copyTemplates(name, config){
   async function readAndCopyFile(parentPath, tempPath){
     const spinner = ora('🗃 开始下载模版...').start();
-    await downLoadTemplate(`direct:git@github.com:coco-h5/coco-template.git`, name, true);
+    await downLoadTemplate(`direct:git@github.com:leiu2520-h5/coco-template.git`, name, true);
     spinner.succeed('🎉 模版下载完成');
     console.log();
     console.info('🚀 初始化文件配置信息...');
